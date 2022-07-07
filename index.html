@@ -5,15 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boxicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css" integrity="sha512-AGmpdsTqvAh2GvTWzVhhJ9VqQb1eAXwOM7uiWtv0DzcnGaGWy98K51z2cK5OG3gp4NB1HbMaD7p0MeO9kE7E3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  </head>
 <body>
     <div class="overall">   
-        <div class="sidebar">
-
-        </div>
-        <div class="maincontent">
+        <div class="sidebar" id="sidebar">
+            <div class="sidemenuitems">
+                <div class="sidehead">
+          <img src="images/logoblack.png" alt="" class="logoimg"><span  class="sidemenutxt"> &ensp;Hilife.Ai</span>
+         </div>
+           <!-- <i class="fab fa-windows"></i><span  class="sidemenutxt">  <h2>  &ensp;Dashboard</h2></span> -->
+                <ul class="sidemenu">
+                    <li><a href=""><i class="fas fa-home sideicon"></i><span class="sidemenutxt">&ensp;Home</span></a></li>
+                    <li><a href=""><i class="fas fa-address-card sideicon"></i><span class="sidemenutxt">&ensp;Profile</span></a></li>
+                    <li><a href=""><i class="fas fa-comment-alt sideicon"></i><span class="sidemenutxt">&ensp;Messages</span></a></li>
+                    <li><a href=""><i class="fas fa-clock sideicon"></i><span class="sidemenutxt">&ensp;History</span></a></li>
+                    <li><a href=""><i class="fas fa-sticky-note sideicon"></i><span class="sidemenutxt">&ensp;Tasks</span></a></li>
+                    <li><a href=""><i class="fas fa-users sideicon"></i><span class="sidemenutxt">&ensp;Communities</span></a></li>
+                    <li><a href=""><i class="fas fa-cog sideicon"></i><span class="sidemenutxt">&ensp;Settings</span></a></li>
+                    <li><a href=""><i class="fas fa-question-circle sideicon"></i><span class="sidemenutxt">&ensp;Support</span></a></li>
+                    <li><a href=""><i class="fas fa-shield-alt sideicon"></i><span class="sidemenutxt">&ensp;Privacy</span></a></li>
+                </ul>
+            </div>
             
         </div>
+        <div class="maincontent">
+
+            <div class="topavbar">
+            <div class="topbar">  
+                <div class="item1"><i class="fas fa-search"></i>&ensp;<input type="search" class="search">
+                </div>
+                <div class="item2 items">
+                   <a href=""> <i class="fas fa-sun fa-lg iconhov"></i></a>
+                
+                </div>
+                <div class="item3 items">
+                 <i class="fas fa-moon fa-lg iconhov" id="dark"></i>
+                  
+                </div>
+                <div class="item4 items">
+                    <a href="https://github.com/Shankaric" target="_blank"><i class='bx bxl-github bx-sm iconhov'></i></a>
+                  
+                </div>
+                <div class="item5 items"><img src="images/avatar.jpg" alt="" class="usericon">
+                </div>      
+            </div> 
+            <div class="lsttopbar">
+                <div class="topbtns usernametop">
+                    <h4>Hi, Admin</h4>
+                </div>
+                <div class="topbtns">
+                    <button class="btn-cus" id="btn1">New</button>
+                </div>
+                <div class="topbtns">
+                    <button  class="btn-cus" id="btn2">Upload</button>
+                </div>
+                <div class="topbtns topbtnlst">
+                    <button  class="btn-cus" id="btn3">Share</button>
+                </div>
+            </div>
+        </div>
+        <h4 class="gridallhead">Projects</h4>
+        <div class="overallgrids">
+            <div class="gridsall">
+       
+                <div class="grids">
+                 <div class="grid1 griditem">
+                      <h5>Recipe project</h5>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius et dolores dolorum, quaerat sunt commodi.</p>
+                        <div class="imgdiv"><img src="images/recipe.png" alt="" class="gridimg"></div><br>
+                      <div class="gridicons">
+                        <a href="https://shankaric.github.io/Odin-recipe/" target="_blank" class="gridicon"><i class="fas fa-eye fa-2x iconhov"></i></a>
+                        <a href="https://github.com/Shankaric/Odin-recipe" target="_blank" class="gridicon"><i class='bx bxl-github bx-sm iconhov'></i></a>
+                      </div>
+                    </div>
+                    <div class="grid1 griditem">
+                      <h5>Landing page project</h5>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius et dolores dolorum, quaerat sunt commodi.</p>
+                      <div class="imgdiv"><img src="images/landing.png" alt="" class="gridimg"></div><br>
+                      <div class="gridicons">
+                        <a href="https://shankaric.github.io/odin-webpage-camera/" target="_blank" class="gridicon"><i class="fas fa-eye fa-2x"></i></a>
+                        <a href="https://github.com/Shankaric/odin-webpage-camera" target="_blank" class="gridicon"><i class='bx bxl-github bx-sm'></i></a>
+                      </div>
+                    </div>
+                </div>
+                <div class="grids">
+                  <div class="grid1 griditem">
+                    <h5>Rps game project</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius et dolores dolorum, quaerat sunt commodi.</p>
+                    <div class="imgdiv"><img src="images/rpsgame.png" alt="" class="gridimg"></div><br>
+                    <div class="gridicons">
+                      <a href="https://shankaric.github.io/rpsgame/" target="_blank" class="gridicon"><i class="fas fa-eye fa-2x"></i></a>
+                      <a href="https://github.com/Shankaric/rpsgame" target="_blank" class="gridicon"><i class='bx bxl-github bx-sm'></i></a>
+                    </div>
+                  </div>
+                  <div class="grid1 griditem">
+                    <h5>Etch-a-sketch project</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius et dolores dolorum, quaerat sunt commodi.</p>
+                    <div class="imgdiv"><img src="images/sketchpad.png" alt="" class="gridimg"></div><br>
+                    <div class="gridicons">
+                      <a href=" https://shankaric.github.io/Etch-a-sketch/" target="_blank" class="gridicon"><i class="fas fa-eye fa-2x"></i></a>
+                      <a href="https://github.com/Shankaric/Etch-a-sketch" target="_blank" class="gridicon"><i class='bx bxl-github bx-sm'></i></a>
+                    </div>
+                  </div>         
+              </div>  
+              <div class="grids">
+                <div class="grid1 griditem">
+                  <h5>Calculator project</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius et dolores dolorum, quaerat sunt commodi.</p>
+                  <div class="imgdiv"><img src="images/calculator.png" alt="" class="gridimg"></div><br>
+                  <div class="gridicons">
+                    <a href="https://shankaric.github.io/calculator/" target="_blank" class="gridicon"><i class="fas fa-eye fa-2x"></i></a>
+                    <a href="https://github.com/Shankaric/calculator" target="_blank" class="gridicon"><i class='bx bxl-github bx-sm'></i></a>
+                  </div>
+                </div>
+                <div class="grid1 griditem">
+                  <h5>Sign-up-form project</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius et dolores dolorum, quaerat sunt commodi.</p>
+                  <div class="imgdiv"><img src="images/signup.png" alt="" class="gridimg"></div><br>
+                  <div class="gridicons">
+                    <a href=" https://shankaric.github.io/sign-up-form/" target="_blank" class="gridicon"><i class="fas fa-eye fa-2x"></i></a>
+                    <a href="https://github.com/Shankaric/sign-up-form" target="_blank" class="gridicon"><i class='bx bxl-github bx-sm'></i></a>
+                  </div>
+                </div>         
+            </div> 
+            </div>
+            
+            <div class="gridsallleft">
+                <h5 class="gridallhead1">Announcements</h4>
+                    <div class="firstbox griditem">
+                        <h6>Lorem, ipsum</h6>
+                        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, praesentium!</P>
+                        <hr>
+                        <h6>Lorem, ipsum</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius et dolores dolorum, quaerat sunt commodi.</p>
+                        <hr>
+                    </div><br>
+                    <h5 class="gridallhead1">Trending</h4>
+                    <div class="firstbox secondbox griditem">
+              
+                        <img src="images/avatar.jpg" alt="" class="avator">
+                        <p class="avatortxt">@shankari ❤ <br> Lorem ipsum dolor sit amet.</p>
+                        <img src="https://image.shutterstock.com/z/stock-vector-profile-icon-female-avatar-woman-portrait-casual-person-silhouette-face-flat-design-vector-308471408.jpg" alt="" class="avator">
+                        <p class="avatortxt">@brinda 😍 <br> Lorem ipsum dolor sit amet.</p>
+                        <img src="https://images.megapixl.com/5824/58249368.jpg" alt="" class="avator">
+                        <p class="avatortxt">@suba 🤩<br> Lorem ipsum dolor sit amet.</p>
+                        <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000" alt="" class="avator">
+                        <p class="avatortxt">@javith 👽 <br> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+    
+      </div>
+
+
+        </div>
+
+
+
+
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
